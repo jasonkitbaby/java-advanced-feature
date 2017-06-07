@@ -6,10 +6,10 @@ public class Domain {
 
 
     @MyAnnotation(column = "id", dataFormate = "int")
-    public int id;
+    private int id;
 
     @MyAnnotation(column = "name")
-    public String name;
+    private String name;
 
 
     public int getId() {
