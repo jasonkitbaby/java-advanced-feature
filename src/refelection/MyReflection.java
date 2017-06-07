@@ -39,6 +39,8 @@ public class MyReflection {
         Constructor[] cts1 = c1.getDeclaredConstructors();
         Constructor[] cts12 =c2.getDeclaredConstructors();
 
+
+
         for(Field field:fs1){
             System.out.println("***************** get declaredFields *****************");
             System.out.println(Modifier.toString(field.getModifiers()));
