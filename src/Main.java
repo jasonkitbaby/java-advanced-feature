@@ -1,13 +1,12 @@
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by fulw on 2017/6/8.
- */
+
 public class Main {
 
-    private boolean flag = true;
+    private Boolean flag = true;
 
     public static void main(String[] args) throws Exception {
+//        System.out.println(Integer.MAX_VALUE);
         Main ts = new Main();
         ts.test();
         for (; ; ) {
@@ -22,12 +21,13 @@ public class Main {
                 int i = 0;
                 while (flag) {
                     i++;
-                    System.out.println(Thread.currentThread().getName() + ",flag:" + flag + "i:" + i);
+//                    System.out.println(Thread.currentThread().getName() + ",flag:" + flag + "i:" + i);
                 }
             }
         });
         testThread.start();
         TimeUnit.SECONDS.sleep(1);
+//        System.out.println(Thread.currentThread().getName() + ",flag:" + flag );
         flag = false;
     }
 }
